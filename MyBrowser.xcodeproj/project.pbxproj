@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A35E47814666D8600F14B81 /* MyBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A35E47614666D8600F14B81 /* MyBrowserViewController.m */; };
+		7A35E47914666D8600F14B81 /* MyBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A35E47714666D8600F14B81 /* MyBrowserViewController.xib */; };
 		7AE4C1681466633E00679D40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE4C1671466633E00679D40 /* UIKit.framework */; };
 		7AE4C16A1466633E00679D40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE4C1691466633E00679D40 /* Foundation.framework */; };
 		7AE4C16C1466633E00679D40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE4C16B1466633E00679D40 /* CoreGraphics.framework */; };
@@ -34,20 +36,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A35E47514666D8600F14B81 /* MyBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBrowserViewController.h; sourceTree = "<group>"; };
+		7A35E47614666D8600F14B81 /* MyBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBrowserViewController.m; sourceTree = "<group>"; };
+		7A35E47714666D8600F14B81 /* MyBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBrowserViewController.xib; sourceTree = "<group>"; };
 		7AE4C1631466633E00679D40 /* MyBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE4C1671466633E00679D40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AE4C1691466633E00679D40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7AE4C16B1466633E00679D40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		7AE4C16F1466633E00679D40 /* MyBrowser-Info.plist */ = {isa = PBXFileReference; path = "MyBrowser-Info.plist"; sourceTree = "<group>"; };
+		7AE4C16F1466633E00679D40 /* MyBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyBrowser-Info.plist"; sourceTree = "<group>"; };
 		7AE4C1711466633E00679D40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AE4C1731466633E00679D40 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7AE4C1751466633E00679D40 /* MyBrowser-Prefix.pch */ = {isa = PBXFileReference; path = "MyBrowser-Prefix.pch"; sourceTree = "<group>"; };
-		7AE4C1761466633E00679D40 /* MyBrowserAppDelegate.h */ = {isa = PBXFileReference; path = MyBrowserAppDelegate.h; sourceTree = "<group>"; };
+		7AE4C1751466633E00679D40 /* MyBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		7AE4C1761466633E00679D40 /* MyBrowserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBrowserAppDelegate.h; sourceTree = "<group>"; };
 		7AE4C1771466633E00679D40 /* MyBrowserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBrowserAppDelegate.m; sourceTree = "<group>"; };
 		7AE4C17A1466633E00679D40 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		7AE4C1811466633E00679D40 /* MyBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE4C1821466633E00679D40 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7AE4C18B1466633E00679D40 /* MyBrowserTests-Info.plist */ = {isa = PBXFileReference; path = "MyBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		7AE4C18B1466633E00679D40 /* MyBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyBrowserTests-Info.plist"; sourceTree = "<group>"; };
 		7AE4C18D1466633E00679D40 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7AE4C18F1466633E00679D40 /* MyBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBrowserTests.h; sourceTree = "<group>"; };
 		7AE4C1911466633E00679D40 /* MyBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyBrowserTests.m; sourceTree = "<group>"; };
@@ -115,6 +120,9 @@
 				7AE4C1771466633E00679D40 /* MyBrowserAppDelegate.m */,
 				7AE4C1791466633E00679D40 /* MainWindow.xib */,
 				7AE4C16E1466633E00679D40 /* Supporting Files */,
+				7A35E47514666D8600F14B81 /* MyBrowserViewController.h */,
+				7A35E47614666D8600F14B81 /* MyBrowserViewController.m */,
+				7A35E47714666D8600F14B81 /* MyBrowserViewController.xib */,
 			);
 			path = MyBrowser;
 			sourceTree = "<group>";
@@ -218,6 +226,7 @@
 			files = (
 				7AE4C1721466633E00679D40 /* InfoPlist.strings in Resources */,
 				7AE4C17B1466633E00679D40 /* MainWindow.xib in Resources */,
+				7A35E47914666D8600F14B81 /* MyBrowserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +264,7 @@
 			files = (
 				7AE4C1741466633E00679D40 /* main.m in Sources */,
 				7AE4C1781466633E00679D40 /* MyBrowserAppDelegate.m in Sources */,
+				7A35E47814666D8600F14B81 /* MyBrowserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +432,7 @@
 				7AE4C1971466633E00679D40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7AE4C1981466633E00679D40 /* Build configuration list for PBXNativeTarget "MyBrowserTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +441,7 @@
 				7AE4C19A1466633E00679D40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
