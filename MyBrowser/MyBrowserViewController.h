@@ -12,9 +12,11 @@
 @interface MyBrowserViewController : UIViewController <UIWebViewDelegate>
 {
     UIWebView *webView;
+    UINavigationBar *navigationBar;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
+@property (nonatomic, retain) IBOutlet UINavigationBar *navigationBar;
 
 - (IBAction)prev;
 - (IBAction)next;

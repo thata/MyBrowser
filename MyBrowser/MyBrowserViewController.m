@@ -11,10 +11,12 @@
 @implementation MyBrowserViewController
 
 @synthesize webView;
+@synthesize navigationBar;
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    NSLog(@"*** didFinishLoad ***");
-    // [self.webView stringByEvaluatingJavaScriptFromString:@"alert(7);"];
+    // タイトルを表示
+    NSString *title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
+    navigationBar.topItem.title = title;
 };
 
 - (IBAction)prev {
