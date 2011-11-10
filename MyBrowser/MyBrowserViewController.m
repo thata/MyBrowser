@@ -7,11 +7,26 @@
 //
 
 #import "MyBrowserViewController.h"
+#import "WordTableViewController.h"
 
 @implementation MyBrowserViewController
 
 @synthesize webView;
 @synthesize navigationBar;
+@synthesize words;
+
+- (IBAction)addWord {
+    NSString *s = @"window.getSelection().toString()";
+    NSString *selection = [webView stringByEvaluatingJavaScriptFromString:s];
+    [self.words addObject:selection];
+}
+
+- (IBAction)listWords {
+    WordTableViewController *view = [[WordTableViewController alloc]
+                                     initWithNibName:@"WordTableViewController" bundle:nil];
+    view.words = self.words;
+    [self presentModalViewController:view animated:YES];
+}
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     // タイトルを表示
@@ -63,6 +78,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    if (!words) {
+        NSMutableArray *array = [[NSMutableArray alloc] init];
+        self.words = array;
+        [array release];
+    }
+
     // Do any additional setup after loading the view from its nib.
     NSURL *url = [NSURL URLWithString:@"http://c2.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

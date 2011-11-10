@@ -13,15 +13,20 @@
 {
     UIWebView *webView;
     UINavigationBar *navigationBar;
+    NSMutableArray *words;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
 @property (nonatomic, retain) IBOutlet UINavigationBar *navigationBar;
+@property (nonatomic, retain) NSMutableArray *words;
 
 - (IBAction)prev;
 - (IBAction)next;
 - (IBAction)stop;
 - (IBAction)reload;
 - (IBAction)home;
+
+- (IBAction)addWord;
+- (IBAction)listWords;
 
 @end
