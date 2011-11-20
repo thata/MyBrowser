@@ -18,7 +18,7 @@
 - (IBAction)addWord {
     NSString *s = @"window.getSelection().toString()";
     NSString *selection = [webView stringByEvaluatingJavaScriptFromString:s];
-    [self.words addObject:selection];
+    [self.words addObject:selection];    
 }
 
 - (IBAction)listWords {
@@ -28,10 +28,38 @@
     [self presentModalViewController:view animated:YES];
 }
 
-- (void)webViewDidFinishLoad:(UIWebView *)webView {
+- (void)initJQuery:(UIWebView *)_webView {
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jquery.js" ofType:nil];
+    NSError *err = nil;
+    NSString *js = [NSString stringWithContentsOfFile:path
+                                             encoding:NSUTF8StringEncoding 
+                                                error:&err];
+    [_webView stringByEvaluatingJavaScriptFromString:js];
+}
+
+- (void)highlight:(UIWebView *)_webView {
+    // highlight
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"hello.js" ofType:nil];
+    NSError *err = nil;
+    NSString *js = [NSString stringWithContentsOfFile:path
+                                             encoding:NSUTF8StringEncoding 
+                                                error:&err];
+    [_webView stringByEvaluatingJavaScriptFromString:js];
+
+    
+    // iterate words
+    for (NSString *word in self.words) {
+        NSString *js = [NSString stringWithFormat:@"highlight(document.body, '%@');", word];
+        [_webView stringByEvaluatingJavaScriptFromString:js];        
+    }
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)_webView {
     // タイトルを表示
     NSString *title = [self.webView stringByEvaluatingJavaScriptFromString:@"document.title"];
     navigationBar.topItem.title = title;
+    [self initJQuery:_webView];
+    [self highlight:_webView];
 };
 
 - (IBAction)prev {

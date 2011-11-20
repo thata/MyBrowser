@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7A35E47814666D8600F14B81 /* MyBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A35E47614666D8600F14B81 /* MyBrowserViewController.m */; };
 		7A35E47914666D8600F14B81 /* MyBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A35E47714666D8600F14B81 /* MyBrowserViewController.xib */; };
+		7A5EAEBC147145730058DF9C /* hello.js in Resources */ = {isa = PBXBuildFile; fileRef = 7A5EAEBB147145730058DF9C /* hello.js */; };
+		7A5EAEC614791F370058DF9C /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = 7A5EAEC514791F370058DF9C /* jquery.js */; };
 		7AD230AB146C076000C9C52C /* WordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD230A9146C076000C9C52C /* WordTableViewController.m */; };
 		7AD230AC146C076000C9C52C /* WordTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD230AA146C076000C9C52C /* WordTableViewController.xib */; };
 		7AE4C1681466633E00679D40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE4C1671466633E00679D40 /* UIKit.framework */; };
@@ -41,6 +43,8 @@
 		7A35E47514666D8600F14B81 /* MyBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBrowserViewController.h; sourceTree = "<group>"; };
 		7A35E47614666D8600F14B81 /* MyBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBrowserViewController.m; sourceTree = "<group>"; };
 		7A35E47714666D8600F14B81 /* MyBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyBrowserViewController.xib; sourceTree = "<group>"; };
+		7A5EAEBB147145730058DF9C /* hello.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = hello.js; path = MyBrowser/hello.js; sourceTree = "<group>"; };
+		7A5EAEC514791F370058DF9C /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
 		7AD230A8146C076000C9C52C /* WordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableViewController.h; sourceTree = "<group>"; };
 		7AD230A9146C076000C9C52C /* WordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewController.m; sourceTree = "<group>"; };
 		7AD230AA146C076000C9C52C /* WordTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordTableViewController.xib; sourceTree = "<group>"; };
@@ -91,6 +95,8 @@
 		7AE4C1581466633D00679D40 = {
 			isa = PBXGroup;
 			children = (
+				7A5EAEC514791F370058DF9C /* jquery.js */,
+				7A5EAEBB147145730058DF9C /* hello.js */,
 				7AE4C16D1466633E00679D40 /* MyBrowser */,
 				7AE4C1891466633E00679D40 /* MyBrowserTests */,
 				7AE4C1661466633E00679D40 /* Frameworks */,
@@ -235,6 +241,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A5EAEBC147145730058DF9C /* hello.js in Resources */,
+				7A5EAEC614791F370058DF9C /* jquery.js in Resources */,
 				7AE4C1721466633E00679D40 /* InfoPlist.strings in Resources */,
 				7AE4C17B1466633E00679D40 /* MainWindow.xib in Resources */,
 				7A35E47914666D8600F14B81 /* MyBrowserViewController.xib in Resources */,
