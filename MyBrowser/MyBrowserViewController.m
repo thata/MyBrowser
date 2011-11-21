@@ -108,9 +108,9 @@
     [super viewDidLoad];
     
     if (!words) {
-        NSMutableArray *array = [[NSMutableArray alloc] init];
-        self.words = array;
-        [array release];
+        NSMutableArray *ws = [[NSMutableArray alloc] init];
+        self.words = ws;
+        [ws release];
     }
 
     // Do any additional setup after loading the view from its nib.
