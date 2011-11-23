@@ -38,13 +38,18 @@
     words = [Wordbook words];
     STAssertTrue([words count] == 1, @"1レコード増える");
     
-//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-//    STAssertNotNil(defaults, @"nilでないこと");
-//    
-//    NSString *s =[defaults stringForKey:@"hello"];
-//    STAssertNil(s, @"まだnilなこと");
-//
-//    STAssertTrue(1 == 1, @"hello");
+    [Wordbook addWord:@"good night"];
+    [Wordbook addWord:@"good afternoon"];
+    words = [Wordbook words];
+    STAssertTrue([words count] == 3, @"さらに2レコード増える");
+    
+    NSString *word0 = [words objectAtIndex:0];
+    NSString *word1 = [words objectAtIndex:1];
+    NSString *word2 = [words objectAtIndex:2];
+    
+    STAssertTrue([@"good afternoon" isEqualToString:word0], @"なんとなくソートされてること");
+    STAssertTrue([@"good night" isEqualToString:word1], @"なんとなくソートされてること");
+    STAssertTrue([@"hello" isEqualToString:word2], @"なんとなくソートされてること");
 }
 
 @end

@@ -28,6 +28,12 @@ static NSMutableArray *_words;
 
 + (void)addWord:(NSString *)word {
     [_words addObject:word];
+    
+    // sort
+    NSSortDescriptor *sortDesc = [[NSSortDescriptor alloc] initWithKey:nil ascending:YES];
+    [_words sortUsingDescriptors:[NSArray arrayWithObject:sortDesc]];
+    
+    // sync to userdefaults
     [Wordbook sync];
 }
 
