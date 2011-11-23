@@ -13,6 +13,9 @@
 		7A5EAEC614791F370058DF9C /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = 7A5EAEC514791F370058DF9C /* jquery.js */; };
 		7AD230AB146C076000C9C52C /* WordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AD230A9146C076000C9C52C /* WordTableViewController.m */; };
 		7AD230AC146C076000C9C52C /* WordTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AD230AA146C076000C9C52C /* WordTableViewController.xib */; };
+		7ADB03B0147CF141007A48A6 /* WordBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB03AE147CF141007A48A6 /* WordBookTests.m */; };
+		7ADB03B3147D0175007A48A6 /* Wordbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB03B2147D0175007A48A6 /* Wordbook.m */; };
+		7ADB03B4147D0175007A48A6 /* Wordbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ADB03B2147D0175007A48A6 /* Wordbook.m */; };
 		7AE4C1681466633E00679D40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE4C1671466633E00679D40 /* UIKit.framework */; };
 		7AE4C16A1466633E00679D40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE4C1691466633E00679D40 /* Foundation.framework */; };
 		7AE4C16C1466633E00679D40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE4C16B1466633E00679D40 /* CoreGraphics.framework */; };
@@ -48,6 +51,10 @@
 		7AD230A8146C076000C9C52C /* WordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordTableViewController.h; sourceTree = "<group>"; };
 		7AD230A9146C076000C9C52C /* WordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordTableViewController.m; sourceTree = "<group>"; };
 		7AD230AA146C076000C9C52C /* WordTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WordTableViewController.xib; sourceTree = "<group>"; };
+		7ADB03AD147CF141007A48A6 /* WordBookTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordBookTests.h; sourceTree = "<group>"; };
+		7ADB03AE147CF141007A48A6 /* WordBookTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordBookTests.m; sourceTree = "<group>"; };
+		7ADB03B1147D0175007A48A6 /* Wordbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Wordbook.h; sourceTree = "<group>"; };
+		7ADB03B2147D0175007A48A6 /* Wordbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Wordbook.m; sourceTree = "<group>"; };
 		7AE4C1631466633E00679D40 /* MyBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AE4C1671466633E00679D40 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7AE4C1691466633E00679D40 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7ADB03A7147CDCBD007A48A6 /* Wordbook */ = {
+			isa = PBXGroup;
+			children = (
+				7ADB03B1147D0175007A48A6 /* Wordbook.h */,
+				7ADB03B2147D0175007A48A6 /* Wordbook.m */,
+			);
+			name = Wordbook;
+			sourceTree = "<group>";
+		};
 		7AE4C1581466633D00679D40 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +143,7 @@
 		7AE4C16D1466633E00679D40 /* MyBrowser */ = {
 			isa = PBXGroup;
 			children = (
+				7ADB03A7147CDCBD007A48A6 /* Wordbook */,
 				7AE4C1761466633E00679D40 /* MyBrowserAppDelegate.h */,
 				7AE4C1771466633E00679D40 /* MyBrowserAppDelegate.m */,
 				7AE4C1791466633E00679D40 /* MainWindow.xib */,
@@ -158,6 +175,8 @@
 				7AE4C18F1466633E00679D40 /* MyBrowserTests.h */,
 				7AE4C1911466633E00679D40 /* MyBrowserTests.m */,
 				7AE4C18A1466633E00679D40 /* Supporting Files */,
+				7ADB03AD147CF141007A48A6 /* WordBookTests.h */,
+				7ADB03AE147CF141007A48A6 /* WordBookTests.m */,
 			);
 			path = MyBrowserTests;
 			sourceTree = "<group>";
@@ -286,6 +305,7 @@
 				7AE4C1781466633E00679D40 /* MyBrowserAppDelegate.m in Sources */,
 				7A35E47814666D8600F14B81 /* MyBrowserViewController.m in Sources */,
 				7AD230AB146C076000C9C52C /* WordTableViewController.m in Sources */,
+				7ADB03B3147D0175007A48A6 /* Wordbook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +314,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AE4C1921466633E00679D40 /* MyBrowserTests.m in Sources */,
+				7ADB03B0147CF141007A48A6 /* WordBookTests.m in Sources */,
+				7ADB03B4147D0175007A48A6 /* Wordbook.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

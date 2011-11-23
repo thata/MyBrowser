@@ -24,9 +24,19 @@
     [super tearDown];
 }
 
+- (void)testUserDefaults
+{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    STAssertNotNil(defaults, @"nilでないこと");
+    
+    NSString *s =[defaults stringForKey:@"hello"];
+    STAssertNil(s, @"まだnilなこと");
+    
+    
+}
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in MyBrowserTests");
+//    STFail(@"Unit tests are not implemented yet in MyBrowserTests");
 }
 
 @end
