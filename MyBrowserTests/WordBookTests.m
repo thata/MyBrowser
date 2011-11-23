@@ -27,7 +27,7 @@
 }
 
 // All code under test must be linked into the Unit Test bundle
-- (void)testMath
+- (void)testWordbook
 {
     NSArray *words = nil;
     

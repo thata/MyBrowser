@@ -8,6 +8,7 @@
 
 #import "MyBrowserViewController.h"
 #import "WordTableViewController.h"
+#import "Wordbook.h"
 
 @implementation MyBrowserViewController
 
@@ -18,13 +19,15 @@
 - (IBAction)addWord {
     NSString *s = @"window.getSelection().toString()";
     NSString *selection = [webView stringByEvaluatingJavaScriptFromString:s];
-    [self.words addObject:selection];    
+//    [self.words addObject:selection];
+    [Wordbook addWord:selection];
 }
 
 - (IBAction)listWords {
     WordTableViewController *view = [[WordTableViewController alloc]
                                      initWithNibName:@"WordTableViewController" bundle:nil];
-    view.words = self.words;
+//    view.words = self.words;
+    view.words = [Wordbook words];
     [self presentModalViewController:view animated:YES];
 }
 
@@ -48,7 +51,7 @@
 
     
     // iterate words
-    for (NSString *word in self.words) {
+    for (NSString *word in [Wordbook words]) {
         NSString *js = [NSString stringWithFormat:@"highlight(document.body, '%@');", word];
         [_webView stringByEvaluatingJavaScriptFromString:js];        
     }
