@@ -39,6 +39,7 @@
     NSURL *url = [NSURL URLWithString:@"http://c2.com/"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
+//    [webView stringByEvaluatingJavaScriptFromString:@"jQuery(document.body).append(\"<h1>hgoe</h1>\");"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -67,7 +68,12 @@
     NSURL *url = [NSURL URLWithString:@"http://c2.com"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [webView loadRequest:request];
-}
+    
+    // load jquery
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"jquery.js" ofType:nil];
+    NSString *js = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    [webView stringByEvaluatingJavaScriptFromString:js];
+ }
 
 - (void)viewDidUnload
 {
